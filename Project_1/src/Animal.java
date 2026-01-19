@@ -3,7 +3,7 @@ public class Animal {
     String gender, name;
     int age;
 
-    public animal(String entered_Gender, String entered_Name, int entered_Age) {
+    public void animal(String entered_Gender, String entered_Name, int entered_Age) {
         is_Alive = true; // predefined
 
         gender = entered_Gender; // parameters for (object) constructor
