@@ -1,5 +1,5 @@
 public class WhileTest {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int number = 123489, sum = 0;
 
@@ -11,6 +11,6 @@ public class WhileTest {
             number = number / 10;
         }
 
-        System.out.println(sum);
+        System.out.println(sum); // change
     }
 }
