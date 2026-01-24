@@ -3,6 +3,6 @@ public class Q1 {
 
         int i = 0;
 
-        System.out.println("Bienvenue en ITI1521 \n Start of the Program. \n Argument " + i + " is Bienvenue \n Argument " + (i+1) + " is en \n Argument " + (i+2) + " is ITI1521 \n End of the Program.");
+        System.out.println("Bienvenue en ITI1521 \nStart of the Program. \nArgument " + i + " is Bienvenue \nArgument " + (i+1) + " is en \nArgument " + (i+2) + " is ITI1521 \nEnd of the Program.");
     }
 }
