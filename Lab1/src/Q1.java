@@ -1,8 +1,10 @@
 public class Q1 {
     public static void main(String[] args) {
 
-        int i = 0;
-
-        System.out.println("Bienvenue en ITI1521 \nStart of the Program. \nArgument " + i + " is Bienvenue \nArgument " + (i+1) + " is en \nArgument " + (i+2) + " is ITI1521 \nEnd of the Program.");
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("Argument " + i + " is: " + args[i]);
+        }
     }
 }
+
+// java separates words passed in cli by space and places them in args[] array.

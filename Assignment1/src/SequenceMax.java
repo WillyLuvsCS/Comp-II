@@ -1,6 +1,6 @@
 
 public class SequenceMax{
-    public static int sequenceMax(x) {
+    public static int sequenceMax(int[] x) {
         int tmp, max = 1;
 
         for (int i = 0; i < (x.length - 1); i++) {
@@ -8,10 +8,10 @@ public class SequenceMax{
             while (i < x.length - 1 && x[i] == x[i + 1]) {
                 tmp++;
                 i++;
-                if (tmp > max) {
-                    max = tmp;
-                    i++;
-                }
+            }
+            if (tmp > max) {
+                max = tmp;
+                i++;
             }
         }
         return max;
