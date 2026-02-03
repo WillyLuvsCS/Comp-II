@@ -4,6 +4,7 @@ public class DivisorsNumber {
         int count = 0;
 
         if (n < 0) {
+            System.out.println("Your integer is not positive");
             return 0;
         } else {
             for (int i = 1; i <= n; i++) {
