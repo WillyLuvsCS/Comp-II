@@ -15,16 +15,44 @@ public class SetInt {
     }
 
     public boolean has(int p) {
-        // YOUR CODE COMES HERE
+        for (int i = 0; i < nbElements; i++) {
+            if (tab[i] == p) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void add(int p) {
-        // YOUR CODE COMES HERE
+        if (has(p)) {
+            return;
+        }
+
+        if (nbElements == size) {
+            throw new IllegalStateException("Set is at max capacity of 20 elements!");
+            // method to throw an error with context
+        }
+
+        tab[nbElements] = p;
+        nbElements++;
     }
 
-    public  void sort( ){
-        // YOUR CODE COMES HERE
+    public void sort() {
+        for (int i = 1; i < nbElements; i++) {
+            int key = tab[i];
+            int j = i - 1;
+
+            // shift bigger elements to the right
+            while (j >= 0 && tab[j] > key) {
+                tab[j + 1] = tab[j];
+                j--;
+            }
+
+            // insert key
+            tab[j + 1] = key;
+        }
     }
+
 
     public String toString() {
         if (nbElements == 0)
