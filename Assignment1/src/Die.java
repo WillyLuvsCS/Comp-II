@@ -9,6 +9,8 @@ public class Die{
      */
     public Die() {
         roll();
+
+        // Die constructor rolls for objects value.
     }
 
     /**
@@ -40,6 +42,9 @@ public class Die{
            System.out.println("Illegal value of die");
 
        }
+
+       // if entered val is within the constraints of a die it sets value to that die,
+        // prints illegal die value otherwise
     }
 
 
@@ -67,6 +72,9 @@ public class Die{
             die1.roll();
             die2.roll();
             throwsCount++;
+
+            // while loop that ends when both die match
+            // keeps count of how many rolls is iterated.
         }
 
         System.out.println("Number of throws: " + throwsCount);

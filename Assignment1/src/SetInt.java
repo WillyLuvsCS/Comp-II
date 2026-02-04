@@ -21,6 +21,8 @@ public class SetInt {
             }
         }
         return false;
+
+        // linear search for p element used in add check
     }
 
     public void add(int p) {
@@ -35,6 +37,9 @@ public class SetInt {
 
         tab[nbElements] = p;
         nbElements++;
+
+        // firstly checks if p is already part of set & if the set is at maximum capacity,
+        // if not then p is added to next available slot and the set size is increased
     }
 
     public void sort() {
@@ -50,6 +55,8 @@ public class SetInt {
 
             // insert key
             tab[j + 1] = key;
+
+            // insertion sort
         }
     }
 

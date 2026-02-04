@@ -16,6 +16,9 @@ public class DivisorsNumber {
         }
     }
 
+    // for loop + if statement checks how many divisors integer n contains by verifying their modulus is 0
+    // counts how many divisors n contains
+
     public static void main(String[] args) {
 
         int N1=100, N2=17, N3=-3;

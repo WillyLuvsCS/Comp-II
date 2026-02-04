@@ -10,9 +10,12 @@ public class SequenceOfTwo{
                 break;
             }
         return b;
+
+        // loops through array if current index stores the same value as next
+        // returns boolean true to show that array has two concurrent values
     }
 
-    //tried to use i++, i++ in an enhance for loop but that evaluates value first then increments and ++i increments than evaluates (for my future reference)
+    //tried to use i++, in an enhance for loop but that evaluates value first then increments and ++i increments than evaluates (for my future reference)
 
     public static void main(String[] args) {
 
