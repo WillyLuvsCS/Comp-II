@@ -10,5 +10,6 @@ public class AnimalPrompts {
     }
 
     public static Cat addCat(Scanner sc) {
+        Cat newCat = new Cat();
     }
 }
