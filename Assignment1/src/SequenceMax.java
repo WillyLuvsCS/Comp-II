@@ -16,6 +16,11 @@ public class SequenceMax{
         return max;
     }
 
+    // nested loop method, inner loop runs a temp count (tmp) of how many values are concurrent,
+    // max if statement keeps track of highest count of same values
+    // outer loop resets tmp after the same value chain breaks,
+    // and continues to the method until entire array has been swept.
+
 
 
     public static void main(String[] args) {

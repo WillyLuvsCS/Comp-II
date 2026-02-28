@@ -1,4 +1,4 @@
-public class Animal {
+public class abstract Animal {
     boolean is_Alive; // instance / field variables
     String gender, name;
     int age;
@@ -10,4 +10,7 @@ public class Animal {
         name = entered_Name;
         age = entered_Age;
     }
+}
+
+void main() {
 }

@@ -9,6 +9,10 @@ public class DivisibleNumber{
         return count;
     }
 
+    // enhanced for loop runs through all positive integers up to n and checks
+    // if their modulus is 0 (i is divisible by n)
+    // then it adds to count of elements divisible by n in such array
+
 
 
     public static void main(String[] args) {

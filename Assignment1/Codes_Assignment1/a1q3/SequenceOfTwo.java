@@ -1,12 +1,13 @@
 
 public class SequenceOfTwo{
-public static (To be completed) sequenceOfTwo( (To be completed)  x) {
+public static sequenceOfTwo(int[] x) {
     /*
      A function that takes an array of integers and returns 
      true if there is at least one sequence of two consecutive equal elements, and false otherwise.
      */
      
      // YOUR CODE COMES HERE
+
   }
 
  
