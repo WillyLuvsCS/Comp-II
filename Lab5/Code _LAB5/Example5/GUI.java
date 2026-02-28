@@ -1,0 +1,72 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class GUI extends JFrame implements ActionListener {
+    public static final int MAX_POINTS = 10;
+    private Point[] tabPoints = new Point[MAX_POINTS];
+    private int number = 0;
+    private JPanel draw;
+    public static final int DRAW_SIZE = 400;
+   
+   public GUI(){
+       super("GUI 5");
+       setSize(DRAW_SIZE, DRAW_SIZE);
+        
+       JPanel panneau1 = new JPanel();
+        panneau1.setBackground(Color.BLUE);
+        add(panneau1, BorderLayout.NORTH);
+        
+        JButton bouton1, bouton2;
+        bouton1 = new JButton("Shape");
+        bouton1.addActionListener(this);
+        panneau1.add(bouton1);
+
+        bouton2 = new JButton("Quit");
+        bouton2.addActionListener(this);
+        panneau1.add(bouton2);
+
+            
+        draw = new DrawPanel();
+        draw.setBackground(Color.WHITE);
+        add(draw, BorderLayout.CENTER); 
+        
+         setDefaultCloseOperation(EXIT_ON_CLOSE);
+         
+    
+  }
+        
+   
+   public void actionPerformed(ActionEvent e) {
+        if (e.getActionCommand().equals("Shape")){
+          addPoint(new Point((int)(Math.random() * DRAW_SIZE), (int)(Math.random() * DRAW_SIZE)));
+            draw.repaint();
+ }
+        else
+            System.out.println("Pression du bouton Quit");
+    }
+
+
+   private void addPoint(Point p) {
+        if (number < MAX_POINTS){
+          tabPoints[number++] = p;
+          }
+            
+    }
+
+    private class DrawPanel extends JPanel {
+        public void paint(Graphics g) {
+            super.paint(g);
+            for (int i = 1; i < number; i++)
+                g.drawLine((int)(tabPoints[i - 1].getX()), (int)(tabPoints[i - 1].getY()), 
+                        (int)(tabPoints[i].getX()), (int)(tabPoints[i].getY()));
+        }
+    }
+
+   
+   public static void main(String[] args) {
+     GUI gui;
+     gui = new GUI();
+     gui.setVisible(true);
+  }
+}

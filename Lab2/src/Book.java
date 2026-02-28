@@ -22,7 +22,7 @@ public class Book {
 
     // display method (since inside of book class expects book object)
     public void display() {
-        //System.out.println("Book[title=" + getTitle() + ", author=" + getAuthor() + "]"); ex1 a)
+        // System.out.println("Book[title=" + getTitle() + ", author=" + getAuthor() + "]"); // ex1 a)
         System.out.println(toString());
     }
 
