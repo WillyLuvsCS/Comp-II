@@ -8,6 +8,7 @@ public class Gui_Example4 extends JFrame implements ActionListener {
 
     public Gui_Example4() {
         super("GUI 4");
+
         setSize(DRAW_SIZE, DRAW_SIZE);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -41,4 +42,4 @@ public class Gui_Example4 extends JFrame implements ActionListener {
     }
 }
 
-// Can differentiate between buttons now
+// Can differentiate between buttons now with getActionCommand()

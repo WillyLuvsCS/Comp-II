@@ -10,6 +10,7 @@ public class Gui_Example3 extends JFrame implements ActionListener {
 
        setSize(DRAW_SIZE, DRAW_SIZE);
        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
        JPanel panel1 = new JPanel();
         panel1.setBackground(Color.BLUE);
         add(panel1, BorderLayout.NORTH);
@@ -39,4 +40,4 @@ public class Gui_Example3 extends JFrame implements ActionListener {
    }
 }
 
-// Recognizes a button was pressed
+// Recognizes a button was pressed with ActionListener

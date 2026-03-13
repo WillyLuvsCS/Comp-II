@@ -2,6 +2,10 @@ package excer2;
 
 public class Tab {
 
+    // Could use enhanced for loops for everything ngl
+
+
+    // Selection sort
     public static void sort(int[] tab) {
         int i, j, min, tmp;
         for (i = 0; i < tab.length - 1; i++) {
@@ -17,6 +21,7 @@ public class Tab {
         }
     }
 
+    // returns average of sum in int type
     public static int average(int[] tab) {
         int sum = 0;
         for (int i = 0; i < tab.length; i++) {
@@ -25,6 +30,7 @@ public class Tab {
         return sum / tab.length;
     }
 
+    // predetermines the array size of small
     public static int count(int[] tab, int val) {
         int counter = 0;
         for (int i = 0; i < tab.length; i++) {
@@ -35,6 +41,7 @@ public class Tab {
         return counter;
     }
 
+    // creates and adds values to small array
     public static void split(int[] tab, int[] small, int val) {
         int j = 0;
         for (int i = 0; i < tab.length; i++) {

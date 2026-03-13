@@ -39,6 +39,7 @@ public class GUI_ex1 extends JFrame implements ActionListener {
     JMenuBar createMenu() {
         JMenuBar bar = new JMenuBar();
 
+
         JMenu menu = new JMenu("ColorMenu");
         bar.add(menu);
 
@@ -107,4 +108,4 @@ public class GUI_ex1 extends JFrame implements ActionListener {
     }
 }
 
-// added colors, quit still inactive
+// added color menu, quit still inactive
